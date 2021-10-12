@@ -11,16 +11,12 @@ export default function Pacientes(){
                 <table>
                     <thead>
                     <h1>Pacientes</h1>
-                        <th>Nome</th>
-                        <td>E-mail</td>
-                        <td>Idade</td>
-                        <td>Telefone</td>
                     </thead>
                     <tbody>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Idade</th>
+                        <th>Telefone</th>
                     </tbody>
                 </table>
             </div>

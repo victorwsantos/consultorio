@@ -27,6 +27,13 @@ const db = mysql.createPool({
   
 })
 
+app.get('/getlist', (req, res)=>{
+    const sql = "SELECT * FROM pacientes;"
+    db.query(sql, (err, result)=>{
+        if(err)console.log(err)
+        else(res.send(result))
+    })
+})
 app.listen(3001, ()=>{
     console.log('Servidor rodando na Porta 3001')
 })

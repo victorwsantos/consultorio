@@ -1,9 +1,19 @@
-import React from "react";
-
-import { Link } from "react-router-dom";
+import Axios from "axios";
+import React, { useEffect, useState } from "react";
 import Header from "../Header";
 
 export default function Pacientes(){
+    
+    const [lista, setLista] = useState();
+
+    console.log(lista)
+
+    useEffect(()=>{
+        Axios.get("http://localhost:3001/getlist").then((response)=>{
+            setLista(response.data);
+        });
+    },[]);
+        
     return(
         <div className='lista-pacientes'>
             <Header/>
@@ -18,6 +28,7 @@ export default function Pacientes(){
                         <th>Idade</th>
                         <th>Telefone</th>
                     </tbody>
+                    
                 </table>
             </div>
         </div>

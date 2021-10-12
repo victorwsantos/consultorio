@@ -85,14 +85,46 @@ align-items: center;
 /* Estilos tabela paciente */
 
 .tabela-pacientes{
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
 }
-.tabela-pacientes{
+.tabela-pacientes table{
+  width: 100%;
  
 }
-.tabela-pacientes thead td, .component-table tbody td{
-
-  width: 50%;
-  border: solid 1px black;
-
+.component-table table{
+  width: 100%;
+  text-align: left;
+}
+.linha-tabela{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+margin: 0px auto;
+}
+.linha-tabela div td{
+width: 300px;
+padding: 5px;
+font-weight: bolder;
+  color: rgb(39, 39, 39);
+border-bottom: 2px solid rgb(6, 6, 75);
+}
+.linha-tabela-prop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px auto;
+  }
+.linha-tabela-prop div td{
+  width: 300px;
+  font-weight: bolder;
+  color: rgb(82, 82, 82);
+  padding: 5px;
+  border-bottom: 2px solid rgb(0, 128, 128);
 }

@@ -21,14 +21,17 @@ export default function Pacientes(){
             <Header/>
             <div className='tabela-pacientes'>
                 <h1>Lista de clientes</h1>
-                     <thead>
-                        <td>Nome</td>
-                        <td>Email</td>
-                        <td>Telefone</td>
-                        <td>idade</td>
-                    </thead>
-            </div>
-            <div>
+                <table>
+
+                     <tr>
+                        <div className='linha-tabela'>
+                            <div><td>Nome</td></div>
+                            <div><td>Email</td></div>
+                            <div><td>Telefone</td></div>
+                            <div><td>idade</td></div>
+                        </div>
+                    </tr>
+            
                         {typeof lista !== "undefined" && lista.map((value)=>{
                         return (
                             <Table setTable={setLista}
@@ -39,6 +42,7 @@ export default function Pacientes(){
                             </Table>
                         )
                         })}
+            </table>
             </div>
         </div>
     )

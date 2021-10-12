@@ -22,7 +22,7 @@ export default function Form(){
         }).then((response)=>{
             console.log(response)
             
-        });console.log(dados)
+        });console.log('Enviados')
     }
 
 

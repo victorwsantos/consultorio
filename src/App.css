@@ -85,9 +85,14 @@ align-items: center;
 /* Estilos tabela paciente */
 
 .tabela-pacientes{
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
-  align-items: center;
-  text-align: center;
+  
+}
+.tabela-pacientes{
+ 
+}
+.tabela-pacientes thead td, .component-table tbody td{
+
+  width: 50%;
+  border: solid 1px black;
+
 }

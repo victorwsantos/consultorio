@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Header(){
     return(
         <div className='header-container'>
@@ -8,10 +8,10 @@ export default function Header(){
             </div>
             <div className='navigation-header'>
                 <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <Link to='/'><li>Home</li></Link>
+                    <Link to='/pacientes'><li>Pacientes</li></Link>
+                    <Link to='/cadastro'> <li>Cadastro</li></Link>
+                    <Link to='/agenda'><li>Agenda</li></Link>
                 </ul>
             </div>
         </div>

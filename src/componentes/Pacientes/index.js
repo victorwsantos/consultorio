@@ -12,7 +12,6 @@ export default function Pacientes(){
     useEffect(()=>{
         Axios.get("http://localhost:3001/getlist").then((response)=>{
             setLista(response.data);
-            console.log(response.data)
         });
     },[]);
         

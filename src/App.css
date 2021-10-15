@@ -128,3 +128,33 @@ border-bottom: 2px solid rgb(6, 6, 75);
   padding: 5px;
   border-bottom: 2px solid rgb(0, 128, 128);
 }
+/* Estilos Botoes */
+
+.delete-button{
+  position: absolute;
+  right: 270px;
+  z-index: 10px;
+}
+.edit-button{
+  position: absolute;
+  right: 180px;
+  z-index: 10px;
+}
+/* Estilos modal-deletar */
+
+.modal-delete{
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.473);
+  width: 100%;
+  z-index: 400px;
+}
+.model-container{
+  background-color: white;
+  width: 50%;
+  height: 20%;
+  margin: 10% auto;
+  border-radius: 15px;
+
+}

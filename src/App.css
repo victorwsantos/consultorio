@@ -140,21 +140,41 @@ border-bottom: 2px solid rgb(6, 6, 75);
   right: 180px;
   z-index: 10px;
 }
-/* Estilos modal-deletar */
+/* Estilos modal-deletar e editar */
 
-.modal-delete{
-  height: 100%;
+#modal-delete{
+  height: 100vh;
+  top: 178px;
+
+  display: none;
   position: absolute;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.473);
-  width: 100%;
+  width: 100vw;
   z-index: 400px;
 }
 .model-container{
+  
   background-color: white;
   width: 50%;
   height: 20%;
   margin: 10% auto;
   border-radius: 15px;
+  z-index: 1000px;
 
+}
+#modal-editar{
+  height: 100vh;
+  top: 178px;
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.473);
+  width: 100vw;
+  z-index: 400px;
+}
+/* Form-modal Editar */
+.form-editar{
+ display: flex;
+ flex-direction: column;
 }

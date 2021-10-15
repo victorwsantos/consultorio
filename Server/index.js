@@ -19,10 +19,11 @@ const db = mysql.createPool({
     const {email} = req.body;
     const {idade} = req.body;
     const {telefone} = req.body;
-
+    
     const sql = "INSERT INTO pacientes (nome, email, idade, telefone) VALUES (?,?,?,?);"
     db.query(sql,[nome, email, idade, telefone],(err, result)=>{
         console.log(err)
+        
     })
   
 })

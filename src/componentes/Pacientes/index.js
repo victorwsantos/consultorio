@@ -1,10 +1,18 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
+import Form from "../Form";
 
 import Header from "../Header";
 import Table from "../Table";
 
 export default function Pacientes(){
+    const clickToClose = (e)=>{
+        const divDelet = document.getElementById('modal-delete');
+        const divedit = document.getElementById('modal-editar');
+        e.preventDefault()
+        divDelet.style.display=('none')
+        divedit.style.display=('none')
+    }
     
     const [lista, setLista] = useState();
 
@@ -43,6 +51,14 @@ export default function Pacientes(){
                         })}
             </table>
             </div>
+            <div  id='modal-delete'>
+                <div className='model-container'>
+                <h1>Deletar</h1>
+                <button onClick={clickToClose}>Cancelar</button>
+                <button>Deletar</button>
+                </div>
+            </div>
+            
         </div>
     )
 }
